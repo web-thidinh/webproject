@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thư viện kiến trúc</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="kientruc.css">	
+	<link rel="stylesheet" type="text/css" href="icon1/css/all.css"><!--FONT AWESOME-->
+	<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="kientrucjs.js"></script>
+</head>
+<body>
+	
+	<div class="container">		
+		<header>
+			<div class="navbar-show">
+				<i class="fas fa-bars menu"></i>
+			</div>
+
+			
+				<a href="#" class="logo">
+					<i class="logo-icon fas fa-book"></i>
+					THƯ VIỆN KIẾN TRÚC
+				</a>
+				<form action="" class="search-box">
+					<input type="text" class="input-search">
+					<button class="search-btn"><i class="fas fa-search"></i></button>
+				</form>
+				<a href="#login-box" class="login">
+					ĐĂNG NHẬP
+					<i class="fas fa-sign-in-alt"></i>
+				</a>
+				
+				
+			
+		</header>
+		<!--FORM LOGIN HIDDING-->
+				<div class="form-login" id="login-box">
+		            <a href="#" class="close-btn">
+		                <i class=" icon-l fas fa-times"></i>
+		            </a> 
+		            <h4 class="title-form">ĐĂNG NHẬP/ ĐĂNG KÝ THÀNH VIÊN</h4>
+		            <button class="login-button social login-fb " type="button">
+		                <i class="fab fa-facebook-square"></i>
+		                FACEBOOK
+		            </button>
+		            <button class="login-button social login-gmail  "type="button">
+		                <i class=" fas fa-envelope"></i>
+		                GMAIL
+		            </button> 
+
+		            <input type="text" placeholder="Tên người dùng" class="input-login input-name">
+		            <input type="text" placeholder="Email" class="input-login input-email show">         
+		            <input type="text" placeholder="Số điện thoại"class="input-login input-number show">          
+		            <input type="password" placeholder="Mật khẩu" class="input-login input-pass ">        
+		            <input type="password" placeholder="Xác nhận mật khẩu" class="input-login input-repass show">  
+
+		            <button class=" login-button log-btn" type="button">ĐĂNG NHẬP</button>
+		            <button class=" login-button reg-btn "type="button">ĐĂNG KÝ</button>       
+	        	</div>
+		<nav class="navbar">
+			<ul class="navbar-menu">
+				<li class="navbar-item home nav-other" >
+					<i class="fas fa-home home-icon" ></i>
+					<a href="#" class="navbar-link">TRANG CHỦ</a>
+				</li>
+				<li class="navbar-item library" >					
+					<a href="#" class="navbar-link">
+							
+						THƯ VIỆN AUTOCAD	
+						<i class="fas fa-sort-down dropdown-icon"></i>
+					</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Link</a>
+						<a href="#" class="dropdown-item">Link</a>
+						<a href="#" class="dropdown-item">Link</a>
+					</div>
+									
+				</li>
+				<li class="navbar-item library">
+					<a href="#" class="navbar-link">
+						
+						THƯ VIỆN 3DSMAX
+						<i class="fas fa-sort-down dropdown-icon"></i>
+					</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Cổ điển</a>
+						<a href="#" class="dropdown-item">Link</a>
+						<a href="#" class="dropdown-item">Link</a>
+					</div>
+				</li>
+				<li class="navbar-item library" >
+					<a href="#" class=" navbar-link">
+						
+						THƯ VIỆN PHOTOSHOP
+						<i class="fas fa-sort-down dropdown-icon"></i>
+					</a>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">PHOTOSHOP PHỐI CẢNH</a>
+						<a href="#" class="dropdown-item">PHOTOSHOP SÂN VƯỜN</a>
+						<a href="#" class="dropdown-item">PHOTOSHOP NỘI THẤT</a>
+					</div>
+				</li>
+				<li class="navbar-item nav-other">
+					<a href="#" class="navbar-link " >MẪU NHÀ ĐẸP</a>
+				</li>	
+				<li class="navbar-item nav-other">
+					<a href="#" class="navbar-link " >GIỚI THIỆU</a>
+				</li>			
+			</ul>
+		</nav>
+		
+		
+		<div class="banner">	
+			<div class="slide-box">				
+				<div class="slide">
+					<img class="slide-child" stt="0" 						src="images/slide4.jpg"  height="290px" >	
+					<img class="slide-child" stt="1" style="display: none"	src="images/slide5.jpg"  height="290px">	
+					<img class="slide-child" stt="2" style="display: none"	src="images/slide6.jpg"  height="290px">
+				
+				<i id="previus_btn" class="slide-button fas fa-angle-left"></i>
+				<i id="next_btn" class="slide-button fas fa-angle-right" ></i>
+				</div>
+			</div>
+		</div>
+		
+		<!--CONTENT-->
+		<div class="content">
+			
+			<div class=" library-content pts-library">
+				<h3 class="library-name max-title">THƯ VIỆN 3DSMAX</h3>
+				<div class="library-box">			
+					<a href="#" class="box max max1">
+						<img src="images/library1.jpg">
+						<h4>Thư viện Arch Model</h4>
+					</a>
+					<a href="#"class="box max max2">
+						<img src="images/library2.jpg">
+						<h4>Thư viện Arch Interriors</h4>
+					</a>
+					<a href="#" class="box max max3">
+						<img src="images/library3.jpg">
+						<h4>Model Tranh Ảnh</h4>
+					</a>
+					<a href="#"class="box max max4">
+						<img src="images/library4.jpg">
+						<h4>Model Thiết bị Công nghệ</h4>
+					</a>
+				
+				</div>
+			</div>
+
+			
+			<div class="library-content cad-library">
+				<h3 class="library-name cad-title">THƯ VIỆN AUTOCAD</h3>
+				<div class="library-box">
+					<a href="#" class="box cad cad1">
+						<img src="images/library5.jpg"/>
+						<h4>Model 3d bàn</h4>
+					</a>
+					<a href="#" class="box cad cad2">
+						<img src="images/library6.jpg"/>
+						<h4>Model 3d kệ giày</h4>
+					</a>
+					<a href="#" class="box cad cad3">
+						<img src="images/library7.jpg"/>
+						<h4>Model gường tủ</h4>
+					</a>
+					<a href="#" class="box cad cad4">
+						<img src="images/library8.jpg"/>
+						<h4>Model 3d bàn phấn</h4>
+					</a>
+				</div>
+			</div>
+
+			
+			<div class="library-content max-library">
+				<h3 class="library-name pts-titlel">THƯ VIỆN PHOTOSHOP</h3>
+				<div class="library-box">
+					<div class="box pts pts1">
+						<img src="images/library9.jpg" alt="">
+						<h4>Photoshop phối cảnh</h4>
+					</div>
+					<div class="box pts pts2">
+						<img src="images/library10.jpg" alt="">
+						<h4>Photoshop nội thất</h4>
+					</div>
+					<div class="box pts pts3">
+						<img src="images/library11.jpg" alt="">
+						<h4>Photoshop bầu trời</h4>
+					</div>
+					<div class="box pts pts4">
+						<img src="images/library12.jpg" alt="">
+						<h4>Photoshop tổng hợp</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--FOOTER-->
+		<div class="footer">
+			<div class="footer-menu ">
+
+				<div class="footer-item nav-content">
+					<h3 class="">DANH MỤC</h3>
+					<ul class="menu-content">
+						<li class="content-item">
+							<a href="#" class="content-type">THƯ VIỆN PHOTOSHOP</a>
+						</li>
+						<li class="content-item">
+							<a href="#" class="content-type">THƯ VIỆN AUTOCAD</a>
+						</li>
+						<li class="content-item">
+							<a href="#" class="content-type">THƯ VIỆN 3DSMAX</a>
+						</li>
+						<li class="content-item">
+							<a href="#" class="content-type">THIẾT KẾ NHÀ, NỘI THẤT</a>
+						</li>
+						<li class="content-item">
+							<a href="#" class="content-type">MẪU NHÀ ĐẸP</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-item form-register">
+					<h3 class="">ĐĂNG KÝ TƯ VẤN</h3>
+					<div class="register">
+						<input type="text" placeholder="Họ tên" class="input-register email">
+											
+						<input type="text" placeholder="Số điện thoại" class="a input-register phone">
+				
+						<input type="text" placeholder="Email" class="input-register re-password">
+						
+						<input type="text" placeholder="Nội dung cần tư vấn" class="a input-register password">
+
+						<button class="regist-btn">ĐĂNG KÝ NGAY</button>
+					</div>
+
+				</div>
+
+				<div class="footer-item contact-us">
+					<h3 class="">LIÊN HỆ TƯ VẤN</h3>
+					<ul class="menu-contact">
+						<li class="contact-item">
+							<a class="contact-type"href=""><i class="contact-icon  fas fa-phone"></i> 0367801228</a>
+						</li>
+						<li class="contact-item">
+							<a class="contact-type" href=""><i class="contact-icon fas fa-envelope"></i> nguyendinhthi209@gmail.com</a>
+						</li>
+						<li class="contact-item">
+							<a class="contact-type" href=""><i class="contact-icon facebook fab fa-facebook-square"></i> facebook.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			
+			
+			<div class="info">© 2020 Copyright:
+				<a class="Copyright" href="#">thuvienkientruc.com</a>				
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$('.navbar-menu').toggleClass('active');
+			})
+		})
+	</script>
+</body>
+</html>
